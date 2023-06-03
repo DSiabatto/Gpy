@@ -1,3 +1,19 @@
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+#
+unique = my_list[:]
+del unique[1:]
+for i in range(len(my_list[:])):
+    if my_list[i] in unique:
+        continue
+    else:
+        unique.append(my_list[i])
+my_list=unique[:]
+#
+print("The list with unique elements only:")
+print(my_list)
+
+##
+
 list.append(value)
 list.insert(location, value)
 
